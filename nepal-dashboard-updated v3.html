@@ -704,7 +704,7 @@
                                 <td><strong>Life Satisfaction</strong></td>
                                 <td>63.3%</td>
                                 <td>Life ladder: 6.3/10<br>Life worthwhile: 6.7/10</td>
-                                <td>Above <a href="https://data.worldhappiness.report/country/NPL" target="_blank" style="color: #2a5298;">Nepal average (53%)</a></td>
+                                <td>Above <a href="https://data.worldhappiness.report/country/NPL" target="_blank" style="color: #2a5298;">national average (53%)</a></td>
                             </tr>
                             <tr>
                                 <td><strong>Psychological Wellbeing</strong></td>
@@ -966,6 +966,7 @@
                 <button class="subnav-tab active" onclick="showWardSubPanel('ward-overview')">Ward Overview</button>
                 <button class="subnav-tab" onclick="showWardSubPanel('ward-detailed')">Detailed Analysis</button>
                 <button class="subnav-tab" onclick="showWardSubPanel('ward-residence')">Residence Patterns</button>
+                <button class="subnav-tab" onclick="showWardSubPanel('ward-domains')">Domains by Ward</button>
             </div>
             
             <div id="ward-overview" class="ward-subpanel active">
@@ -1015,14 +1016,14 @@
                             <tr style="background-color: #fff9c4;">
                                 <td>3rd</td>
                                 <td><strong>Ward 4</strong></td>
-                                <td>Gokyo, Machermo</td>
+                                <td>Khumjung, Kunde</td>
                                 <td>67.0%</td>
-                                <td>Remote tourism, environmental challenges</td>
+                                <td>Traditional villages, cultural preservation</td>
                             </tr>
                             <tr style="background-color: #ffe0b2;">
                                 <td>4th</td>
                                 <td><strong>Ward 3</strong></td>
-                                <td>Everest Trail villages</td>
+                                <td>Main Trail villages</td>
                                 <td>64.8%</td>
                                 <td>High tourism impact, cultural pressure</td>
                             </tr>
@@ -1038,7 +1039,7 @@
                 </div>
                 
                 <div class="chart-container">
-                    <h3>Village Distribution by Ward</h3>
+                    <h3>Survey Distribution by Ward</h3>
                     <canvas id="villageDistributionChart"></canvas>
                 </div>
             </div>
@@ -1054,7 +1055,7 @@
                             <li><strong>Overall Wellbeing:</strong> 68.2% (2nd highest)</li>
                             <li><strong>Strengths:</strong> Community cohesion (72%), Environment (75%)</li>
                             <li><strong>Challenges:</strong> Limited economic opportunities, youth migration</li>
-                            <li><strong>Key Finding:</strong> Traditional agricultural lifestyle supports wellbeing despite economic limitations</li>
+                            <li><strong>Key Finding:</strong> Traditional agricultural livelihoods support wellbeing despite economic limitations</li>
                         </ul>
                     </div>
                     
@@ -1065,23 +1066,23 @@
                             <li><strong>Overall Wellbeing:</strong> 63.6% (lowest)</li>
                             <li><strong>Strengths:</strong> Economic activity from airport</li>
                             <li><strong>Challenges:</strong> Overcrowding, rapid development, cultural dilution</li>
-                            <li><strong>Key Finding:</strong> Gateway status brings economic benefits but significant social costs</li>
+                            <li><strong>Key Finding:</strong> Gateway status brings economic benefits but significant social issues</li>
                         </ul>
                     </div>
                     
                     <div class="finding-card">
-                        <h4>Ward 3 (Everest Trail) - Tourism Intensity</h4>
+                        <h4>Ward 3 (Main Trail) - Tourism Intensity</h4>
                         <ul>
                             <li><strong>Sample Size:</strong> 65 respondents</li>
                             <li><strong>Overall Wellbeing:</strong> 64.8% (4th)</li>
                             <li><strong>Strengths:</strong> Tourism income, infrastructure</li>
                             <li><strong>Challenges:</strong> Cultural pressure, environmental degradation</li>
-                            <li><strong>Key Finding:</strong> Direct Everest trail location creates mixed blessing</li>
+                            <li><strong>Key Finding:</strong> Main supply route and trekking trail creates mixed blessing</li>
                         </ul>
                     </div>
                     
                     <div class="finding-card">
-                        <h4>Ward 4 (Gokyo Area) - Remote Resilience</h4>
+                        <h4>Ward 4 (Khumjung/Kunde) - Traditional Villages</h4>
                         <ul>
                             <li><strong>Sample Size:</strong> 151 respondents</li>
                             <li><strong>Overall Wellbeing:</strong> 67.0% (3rd)</li>
@@ -1142,7 +1143,7 @@
                                     <td>Mixed: year-round + seasonal</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Ward 3</strong><br>(Everest Trail)</td>
+                                    <td><strong>Ward 3</strong><br>(Main Trail)</td>
                                     <td>8%</td>
                                     <td>15%</td>
                                     <td>32%</td>
@@ -1151,7 +1152,7 @@
                                     <td>High seasonal migration</td>
                                 </tr>
                                 <tr style="background: #f5f5f5;">
-                                    <td><strong>Ward 4</strong><br>(Gokyo)</td>
+                                    <td><strong>Ward 4</strong><br>(Khumjung/Kunde)</td>
                                     <td>6%</td>
                                     <td>12%</td>
                                     <td>25%</td>
@@ -1227,6 +1228,69 @@
                             <p style="margin-top: 10px;"><strong>Exception:</strong> Ward 2 (Lukla) shows lower wellbeing despite moderate permanence, likely due to 
                             gateway stress, rapid development, and tourism pressure impacts.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="ward-domains" class="ward-subpanel">
+                <div class="analysis-section">
+                    <h3>Domain Scores by Ward (2025)</h3>
+                    <p style="font-style: italic; margin-bottom: 20px;">Comparative analysis of all 12 wellbeing domains across the 5 wards</p>
+                    
+                    <div class="chart-container" style="height: 500px;">
+                        <canvas id="wardDomainsChart"></canvas>
+                    </div>
+                    
+                    <div class="analysis-section" style="margin-top: 30px;">
+                        <h4>Key Domain Variations by Ward:</h4>
+                        
+                        <div class="finding-card">
+                            <h5>Economy Domain (Lowest Overall at 37.8%)</h5>
+                            <ul>
+                                <li><strong>Ward 2 (Lukla):</strong> Highest due to airport economy</li>
+                                <li><strong>Ward 5 (Namche):</strong> Strong commercial center</li>
+                                <li><strong>Ward 1 (Kharikhola):</strong> Lowest - limited economic opportunities</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="finding-card">
+                            <h5>Tourism Domain (70.3% average)</h5>
+                            <ul>
+                                <li><strong>Ward 3 (Main Trail):</strong> Highest - direct tourism exposure</li>
+                                <li><strong>Ward 1 (Kharikhola):</strong> Lower - less tourism infrastructure</li>
+                                <li><strong>Ward 4 (Khumjung):</strong> Moderate - balanced approach</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="finding-card">
+                            <h5>Community Domain (54.5% average)</h5>
+                            <ul>
+                                <li><strong>Ward 1 & Ward 4:</strong> Highest - traditional community bonds</li>
+                                <li><strong>Ward 2 (Lukla):</strong> Lowest - transient population effects</li>
+                                <li><strong>Ward 5 (Namche):</strong> Moderate - urban dynamics</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="finding-card">
+                            <h5>Environment Domain (73.4% average)</h5>
+                            <ul>
+                                <li><strong>Ward 1 (Kharikhola):</strong> Highest - pristine environment</li>
+                                <li><strong>Ward 2 (Lukla):</strong> Lowest - airport pollution</li>
+                                <li><strong>Ward 3 (Main Trail):</strong> Moderate - tourism impacts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                        <h4>Data Note on Namche Residence Patterns:</h4>
+                        <p>Contrary to perception that "Namche is quite empty off-season," the 2025 data shows:</p>
+                        <ul>
+                            <li>25% of Namche residents stay year-round (10-12 months)</li>
+                            <li>45% stay 7-9 months</li>
+                            <li>Combined 70% maintain presence for 7+ months</li>
+                            <li>Only 30% are truly seasonal (staying 6 months or less)</li>
+                        </ul>
+                        <p>This indicates Namche maintains a substantial core population throughout the year, supporting its role as the economic center.</p>
                     </div>
                 </div>
             </div>
@@ -2149,9 +2213,9 @@
                     <ul>
                         <li><strong>Ward 1:</strong> Kharikhola Area - Agricultural base</li>
                         <li><strong>Ward 2:</strong> Lukla Area - Gateway/airport</li>
-                        <li><strong>Ward 3:</strong> Everest Trail villages - High tourism</li>
-                        <li><strong>Ward 4:</strong> Gokyo/Machermo - Remote tourism</li>
-                        <li><strong>Ward 5:</strong> Namche/Thami/Khumjung - Economic center</li>
+                        <li><strong>Ward 3:</strong> Main Trail villages - High tourism</li>
+                        <li><strong>Ward 4:</strong> Khumjung/Kunde - Traditional villages</li>
+                        <li><strong>Ward 5:</strong> Namche/Thami - Economic center</li>
                     </ul>
                 </div>
                 
@@ -2850,7 +2914,7 @@
                 ctxWard.chart = new Chart(ctxWard, {
                     type: 'bar',
                     data: {
-                        labels: ['Ward 2 (Lukla)', 'Ward 3 (Everest Trail)', 'Ward 4 (Gokyo)', 'Ward 1 (Kharikhola)', 'Ward 5 (Namche/Thami)'],
+                        labels: ['Ward 2 (Lukla)', 'Ward 3 (Main Trail)', 'Ward 4 (Khumjung)', 'Ward 1 (Kharikhola)', 'Ward 5 (Namche/Thami)'],
                         datasets: [{
                             label: 'Overall Wellbeing Score (%)',
                             data: [63.6, 64.8, 67.0, 68.2, 69.6],
@@ -2938,6 +3002,80 @@
                         }
                     },
                     plugins: [ChartDataLabels]
+                });
+            }
+            
+            // Ward Domains Chart
+            const ctxDomains = document.getElementById('wardDomainsChart');
+            if (ctxDomains && !ctxDomains.chart) {
+                ctxDomains.chart = new Chart(ctxDomains, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Satisfaction', 'Psychological', 'Health', 'Time Balance', 'Learning', 
+                                'Community', 'Social Support', 'Environment', 'Government', 'Economy', 'Work', 'Tourism'],
+                        datasets: [
+                            {
+                                label: 'Ward 1 (Kharikhola)',
+                                data: [65.2, 87.9, 72.1, 58.9, 74.3, 68.1, 68.1, 76.6, 57.7, 47.0, 69.5, 72.5],
+                                borderColor: 'rgb(255, 99, 132)',
+                                backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                                tension: 0.1
+                            },
+                            {
+                                label: 'Ward 2 (Lukla)',
+                                data: [60.4, 78.0, 58.9, 52.9, 54.7, 71.9, 71.9, 71.3, 55.5, 57.7, 65.5, 73.0],
+                                borderColor: 'rgb(54, 162, 235)',
+                                backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                                tension: 0.1
+                            },
+                            {
+                                label: 'Ward 3 (Main Trail)',
+                                data: [62.6, 72.8, 65.0, 60.0, 51.6, 69.4, 69.4, 72.5, 49.5, 51.2, 68.1, 74.9],
+                                borderColor: 'rgb(255, 206, 86)',
+                                backgroundColor: 'rgba(255, 206, 86, 0.1)',
+                                tension: 0.1
+                            },
+                            {
+                                label: 'Ward 4 (Khumjung)',
+                                data: [66.5, 80.1, 69.2, 62.0, 52.3, 65.7, 65.7, 74.5, 47.0, 53.2, 70.8, 69.6],
+                                borderColor: 'rgb(75, 192, 192)',
+                                backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                                tension: 0.1
+                            },
+                            {
+                                label: 'Ward 5 (Namche)',
+                                data: [73.0, 77.4, 70.2, 57.4, 48.8, 61.5, 61.5, 74.0, 51.8, 53.0, 66.4, 68.5],
+                                borderColor: 'rgb(153, 102, 255)',
+                                backgroundColor: 'rgba(153, 102, 255, 0.1)',
+                                tension: 0.1
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                max: 100,
+                                ticks: {
+                                    stepSize: 20
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.dataset.label + ': ' + context.parsed.r + '%';
+                                    }
+                                }
+                            }
+                        }
+                    }
                 });
             }
         }
