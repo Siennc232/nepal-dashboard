@@ -1,6 +1,7 @@
 # Nepal Community Wellbeing Dashboard
 
 This dashboard project was developed during my 2025 summer internship as a Data & AI Intern at One Nature.
+https://onenatureinstitute.org
 
 ## Project Overview
 
@@ -10,7 +11,7 @@ I was responsible for:
 
 ## Final Version
 
-The final version of the dashboard is: **nepal-dashboard-self-contained.html**
+The final version of the dashboard is: **nepal-dashboard-v4.html** You can view it via this link: **https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v4.html**
 
 This self-contained HTML file includes all necessary styling and scripts, making it easy to view and share without additional dependencies.
 
