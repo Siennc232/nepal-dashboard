@@ -25,12 +25,12 @@ The journey began with understanding the data structure - survey responses measu
 
 Throughout this internship, Notion became my digital workspace for organizing this complex project. Here's how I structured my workflow:
 
-### 📊 Project Database
+### Project Database
 - Created a master database tracking all Python scripts, analysis files, and iterations
 - Tagged each entry by analysis type (demographics, tourism, economy, etc.)
 - Linked related analyses to see connections between different data insights
 
-### 📝 Daily Progress Logs
+### Daily Progress Logs
 - Maintained daily entries documenting:
   - Tasks completed
   - Challenges encountered
@@ -38,12 +38,12 @@ Throughout this internship, Notion became my digital workspace for organizing th
   - Questions for mentors
 - This created a searchable knowledge base I could reference when similar issues arose
 
-### 🎯 Task Management
+### Task Management
 - Used Kanban boards to move tasks through stages: "To Analyze" → "In Progress" → "Validation" → "Complete"
 - Set up automated reminders for data validation checks
 - Created templates for recurring analysis workflows
 
-### 📚 Documentation Wiki
+### Documentation Wiki
 - Built a comprehensive wiki including:
   - Data dictionary explaining all 77 survey questions
   - Methodology notes for each calculation
