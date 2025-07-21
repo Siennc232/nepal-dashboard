@@ -35,9 +35,7 @@ Welcome to the comprehensive documentation for the Nepal Community Wellbeing Das
 ## Core Project Files
 
 ### Dashboard
-- **[Nepal Dashboard HTML](nepal-dashboard-v7.html)** - The interactive community wellbeing dashboard
-- **[Survey Data](Nepal-Grid%20view.csv)** - Raw survey responses from 2025
-
+- **[Nepal Dashboard HTML](https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v7.html)** - The interactive community wellbeing dashboard
 ---
 
 ## Technical Documentation
@@ -62,7 +60,7 @@ Welcome to the comprehensive documentation for the Nepal Community Wellbeing Das
 ## Quick Start
 
 1. **New to the project?** Start with the [Nepal Dashboard Analysis Guidebook](nepal_dashboard_analysis_guidebook.md)
-2. **Want to see the results?** Open the [Dashboard](nepal-dashboard-v7.html)
+2. **Want to see the results?** Open the [Dashboard](https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v7.html)
 3. **Interested in methodology?** Read about [MSC Implementation](msc_implementation_guide.md)
 4. **Looking to improve the survey?** Check the [Survey Improvement Guide](survey_improvement_guide.md)
 
