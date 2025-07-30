@@ -9,7 +9,7 @@ This guide will help you make text changes to the HTML file without any coding k
    - Find the v7 dashboard HTML file
 
 2. **Download the File**
-   - Click on the HTML filename (usually something like `dashboard_v7.html` or `index.html`)
+   - Click on the HTML filename (`nepal_dashboard_v7.html`)
    - The page will show the code content
    - Click the **"Raw"** button in the top right corner
    - Right-click on the page and select **"Save as"**
