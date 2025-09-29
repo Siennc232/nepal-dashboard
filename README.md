@@ -11,7 +11,7 @@ I was responsible for:
 
 ## Final Version
 
-The final version of the dashboard is: **nepal-dashboard-v7.html** You can view it via this link: **https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v7.html**
+The final version of the dashboard is: **nepal-dashboard-v9.html** You can view it via this link: **https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v9.html**
 
 This self-contained HTML file includes all necessary styling and scripts, making it easy to view and share without additional dependencies.
 
@@ -35,7 +35,7 @@ Welcome to the comprehensive documentation for the Nepal Community Wellbeing Das
 ## Core Project Files
 
 ### Dashboard
-- **[Nepal Dashboard HTML](https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v7.html)** - The interactive community wellbeing dashboard
+- **[Nepal Dashboard HTML](https://siennc232.github.io/nepal-dashboard/nepal-dashboard-v9.html)** - The interactive community wellbeing dashboard
 ---
 
 ## Technical Documentation
